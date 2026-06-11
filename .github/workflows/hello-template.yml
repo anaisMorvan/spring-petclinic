@@ -2,7 +2,7 @@ name: "Hello template"
 
 on:
   workflow_call:
-    input: 
+    inputs: 
       username: 
         description: "Nom de l'utilisateur"
         required: true
