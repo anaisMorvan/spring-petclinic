@@ -27,5 +27,5 @@ jobs:
           cache: 'maven'
 
       - name: Build Docker image
-        run: ./mvnw sprint-boot:build-image -DskipTests
+        run: ./mvnw spring-boot:build-image -DskipTests
  
