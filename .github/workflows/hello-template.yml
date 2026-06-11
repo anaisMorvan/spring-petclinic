@@ -1,0 +1,15 @@
+name: "Hello template"
+on:
+  workflow_dispatch:
+    input: 
+      username: 
+        description: "Nom de l'utilisateur"
+        required: true
+        type: string
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Dire bonjour
+      run: echo "Bonjour ${{inputs.username}} depuis le workflow réutilisable."
+      
