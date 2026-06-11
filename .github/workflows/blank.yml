@@ -8,3 +8,16 @@ jobs:
         uses: actions/checkout@v4
       - name: Run a one-line script
         run: echo "Hello, world!"
+  
+  test1:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Test after build
+        run: echo "[test1] After build"
+  
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test in parallel with build
+        run: echo "[test2] Parallel with build"
