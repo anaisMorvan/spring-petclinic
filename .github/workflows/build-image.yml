@@ -36,7 +36,7 @@ jobs:
       - name: Cloner le dépôt d'infrastructure
         uses: actions/checkout@v4
         with:
-          repository: 'anaisMorvan/tp9-argocd' # A REMPLACER (ex: <VOTRE_USER_GITHUB>/gitops-infra)
+          repository: 'anaisMorvan/tp7-kubernetes' # A REMPLACER (ex: <VOTRE_USER_GITHUB>/gitops-infra)
           token: ${{ secrets.GITOPS_PATH }}
           path: 'infra-repo' # On clone dans un sous-dossier pour ne pas écraser l'espace de travail
 
