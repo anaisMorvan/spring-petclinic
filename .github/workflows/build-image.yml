@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: 'anaisMorvan/tp9-argocd' # A REMPLACER (ex: <VOTRE_USER_GITHUB>/gitops-infra)
-          token: ${{ secrets.GITOPS_PAT }}
+          token: ${{ secrets.GITOPS_PATH }}
           path: 'infra-repo' # On clone dans un sous-dossier pour ne pas écraser l'espace de travail
 
       - name: Mettre à jour la version de l'image
